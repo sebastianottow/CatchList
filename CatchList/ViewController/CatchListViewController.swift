@@ -13,8 +13,6 @@ class CatchListViewController: UIViewController {
     
     //imports the Model "Catches" from the Modelfolder
     private var _viewModel: ViewControllerViewModel?
-
-    var myCatchesArray = [String]()
     
     @IBOutlet weak var catchListTableView: UITableView?
     @IBOutlet weak var textField: UITextField?
@@ -24,7 +22,11 @@ class CatchListViewController: UIViewController {
         super.viewDidLoad()
         
         catchListTableView?.register(SingleCatchCell.self, forCellReuseIdentifier: "SingleCatchCell")
-        // Do any additional setup after loading the view.
+        
+        _viewModel = ViewControllerViewModel(model: nil)
+        
+        textField?.placeholder = "neuen Fang eintragen..."
+//        // Do any additional setup after loading the view.
     }
     
     
@@ -63,13 +65,11 @@ extension CatchListViewController: UITableViewDataSource {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "SingleCatchCell", for: indexPath) as? SingleCatchCell else { return UITableViewCell() }
           
-        let fishCaught = _viewModel?.catches?[indexPath.row]
+        let caughtSpecies = _viewModel?.catches?[indexPath.row]
         
-        cell.viewModel = fishCaught
+        cell.viewModel = caughtSpecies
         cell.customCell()
-                    
-        // cell.textLabel?.text = _viewModel?.catches?[indexPath.row]
-          
+        
           return cell
         
     }
