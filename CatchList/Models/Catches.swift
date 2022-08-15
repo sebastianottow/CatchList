@@ -6,8 +6,9 @@
 //
 
 import Foundation
+import UIKit
 
-struct Catches {
+struct Catches: Codable {
     
     var species: String
     var length: Double
@@ -21,7 +22,7 @@ class ViewControllerViewModel {
     
     init( model: [Catches]?){
         let defaultModel = [
-            Catches(species: "Regenbogenforell", length: 30.20, weight: 0.8)
+            Catches(species: "Regenbogenforelle", length: 30.20, weight: 0.8)
         ]
         
         catches = defaultModel

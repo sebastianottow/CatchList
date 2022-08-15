@@ -13,9 +13,6 @@
 		5609E0A128851DFB000C35B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5609E09F28851DFB000C35B1 /* Main.storyboard */; };
 		5609E0A328851DFD000C35B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5609E0A228851DFD000C35B1 /* Assets.xcassets */; };
 		5609E0A628851DFD000C35B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5609E0A428851DFD000C35B1 /* LaunchScreen.storyboard */; };
-		5609E0B128851DFD000C35B1 /* CatchListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5609E0B028851DFD000C35B1 /* CatchListTests.swift */; };
-		5609E0BB28851DFD000C35B1 /* CatchListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5609E0BA28851DFD000C35B1 /* CatchListUITests.swift */; };
-		5609E0BD28851DFD000C35B1 /* CatchListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5609E0BC28851DFD000C35B1 /* CatchListUITestsLaunchTests.swift */; };
 		56B4C334288693D00044FE84 /* CatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B4C333288693D00044FE84 /* CatchListViewController.swift */; };
 		56B4C3392886957F0044FE84 /* CatchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B4C3382886957F0044FE84 /* CatchListViewController.xib */; };
 		56B4C33C28869F350044FE84 /* SingleCatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B4C33B28869F350044FE84 /* SingleCatchCell.swift */; };
@@ -49,10 +46,7 @@
 		5609E0A528851DFD000C35B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5609E0A728851DFD000C35B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5609E0AC28851DFD000C35B1 /* CatchListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5609E0B028851DFD000C35B1 /* CatchListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchListTests.swift; sourceTree = "<group>"; };
 		5609E0B628851DFD000C35B1 /* CatchListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5609E0BA28851DFD000C35B1 /* CatchListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchListUITests.swift; sourceTree = "<group>"; };
-		5609E0BC28851DFD000C35B1 /* CatchListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56B4C333288693D00044FE84 /* CatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatchListViewController.swift; sourceTree = "<group>"; };
 		56B4C3382886957F0044FE84 /* CatchListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatchListViewController.xib; sourceTree = "<group>"; };
 		56B4C33B28869F350044FE84 /* SingleCatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCatchCell.swift; sourceTree = "<group>"; };
@@ -88,8 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				5609E09828851DFB000C35B1 /* CatchList */,
-				5609E0AF28851DFD000C35B1 /* CatchListTests */,
-				5609E0B928851DFD000C35B1 /* CatchListUITests */,
 				5609E09728851DFB000C35B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,23 +110,6 @@
 				5609E0A728851DFD000C35B1 /* Info.plist */,
 			);
 			path = CatchList;
-			sourceTree = "<group>";
-		};
-		5609E0AF28851DFD000C35B1 /* CatchListTests */ = {
-			isa = PBXGroup;
-			children = (
-				5609E0B028851DFD000C35B1 /* CatchListTests.swift */,
-			);
-			path = CatchListTests;
-			sourceTree = "<group>";
-		};
-		5609E0B928851DFD000C35B1 /* CatchListUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5609E0BA28851DFD000C35B1 /* CatchListUITests.swift */,
-				5609E0BC28851DFD000C35B1 /* CatchListUITestsLaunchTests.swift */,
-			);
-			path = CatchListUITests;
 			sourceTree = "<group>";
 		};
 		56B4C335288695080044FE84 /* ViewController */ = {
@@ -300,7 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5609E0B128851DFD000C35B1 /* CatchListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +282,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5609E0BD28851DFD000C35B1 /* CatchListUITestsLaunchTests.swift in Sources */,
-				5609E0BB28851DFD000C35B1 /* CatchListUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
