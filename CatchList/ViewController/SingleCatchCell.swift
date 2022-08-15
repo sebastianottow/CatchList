@@ -16,7 +16,7 @@ class  SingleCatchCell: UITableViewCell {
     func customCell() {
         
         textLabel?.text = viewModel?.species
-        backgroundColor = UIColor.red
+        backgroundColor = UIColor.blue
 
         
     }
