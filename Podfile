@@ -6,6 +6,8 @@ target 'CatchList' do
   use_frameworks!
 
   # Pods for CatchList
+  pod "TinyConstraints"
+
 
   target 'CatchListTests' do
     inherit! :search_paths
